@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 20);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(13, 13, 42);
+    color: rgb(204, 189, 243);
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+nav ul li a:hover {
+    color: rgb(150, 150, 248);
+    font-size: .82rem;
+}
+
+h1 {
+    padding: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+}
+
+h4{
+    margin-top: -33px;
+    margin-bottom: 70px;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 80px 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.firstSection>div {
+    width: 100%;
+    max-width: 600px;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px 0px;
+    mix-blend-mode: lighten;
+    -webkit-box-reflect: below -10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+}
+
+.purple {
+    /* color: rgb(170, 107, 228); */
+    color: rgb(167, 72, 255);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    /* color: rgb(170, 107, 228); */
+    color: rgb(167, 72, 255);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+        0px 5px 10px rgba(5, 5, 5, 0.212),
+        0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.secsection {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+
+.secsection {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.tech {
+    display: inline-block;
+    margin: 15px;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 30%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tech img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+    .tech {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+
+
+
+
+.thirdsection {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(#000000, #161629) padding-box, linear-gradient(132deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 22px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    overflow: visible;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container .form-group label {
+    display: block;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #414141;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder,
+.form-container .form-group textarea::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    background: #333333;
+    text-align: center;
+    cursor: pointer;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    box-shadow: -1px -5px 15px #7c829a, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    margin-top: 20px;
+}
+
+.form-container .form-submit-btn:hover {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #ffffff;
+}
+
+.form-container .form-submit-btn:active {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+}
+
+
+
+.fourthsection {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.social {
+    display: inline-block;
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 30%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.social.linkedin {
+    background-image: url('asset/linkedin.png');
+}
+
+.social.github {
+    background-image: url('asset/github.png');
+}
+
+.social.instagram {
+    background-image: url('asset/instagram.png');
+}
+
+.social.twitter {
+    background-image: url('asset/twitter.png');
+}
+
+.social a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-decoration: none;
+}
+
+.social:hover {
+    transform: scale(0.7);
+}
+
+@media (max-width: 580px) {
+    .social {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: rgb(87, 74, 147);
+    padding-bottom: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0px;
+    }
+
+    h1 {
+        padding: 30px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    h4{
+        font-size: small;
+    }
+
+    section {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .firstSection {
+        flex-direction: column-reverse;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+        padding-bottom: 90px;
+    }
+
+    .rightSection img {
+        width: 80%;
+        max-width: 300px;
+        padding-bottom: 80px;
+    }
+
+    .btn {
+        width: 90%;
+        max-width: 140px;
+        height: 45px;
+        font-size: 0.8rem;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .form-container .form-submit-btn {
+        width: 90%;
+        max-width: 140px;
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: small;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 2px 0px;
+    }
+
+    .firstSection {
+        margin: 60px 10px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+        padding-bottom: 80px;
+
+    }
+
+    .rightSection img {
+        width: 100%;
+        max-width: 250px;
+        padding-bottom: 80px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 120px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-container .form-submit-btn {
+        width: 80%;
+        max-width: 100px;
+        font-size: 12px;
+    }
+
+    .tech{
+        width:30px;
+        height: 30px;
+    }
+
+    .social {
+        width: 30px;
+        height: 30px;
+    }
+    footer{
+        font-size: x-small;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    /* transform: translateX(-100%); */
+    transition: all 1s;
+}
+
+.LLtoR{
+    transform: translateX(-100%);
+
+}
+
+.RRtoL{
+    transform: translateX(100%);
+}
+
+.LtoR{
+    transform: translateX(-100%);
+
+}
+
+.RtoL{
+    transition: all 2s;
+    transform: translateX(100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+.tech:nth-child(2){
+    transition: all 1.5s;
+    transition-delay: 200ms;
+}
+.tech:nth-child(3){
+    transition: all 1.5s;
+    transition-delay: 400ms;
+}
+.tech:nth-child(4){
+    transition: all 1.5s;
+    transition-delay: 600ms;
+}
+.tech:nth-child(5){
+    transition: all 1.5s;
+    transition-delay: 800ms;
+}
+.tech:nth-child(6){
+    transition: all 1.5s;
+    transition-delay: 1000ms;
+}
+.tech:nth-child(7){
+    transition: all 1.5s;
+    transition-delay: 1200ms;
+}
+.tech:nth-child(8){
+    transition: all 1.5s;
+    transition-delay: 1400ms;
+}
+.tech:nth-child(9){
+    transition: all 1.5s;
+    transition-delay: 1600ms;
+}
+.tech:nth-child(10){
+    transition: all 1.5s;
+    transition-delay: 1800ms;
+}
+.tech:nth-child(11){
+    transition: all 1.5s;
+    transition-delay: 2000ms;
+}
+.tech:nth-child(12){
+    transition: all 1.5s;
+    transition-delay: 2200ms;
+}
+.tech:nth-child(13){
+    transition: all 1.5s;
+    transition-delay: 2400ms;
+}
+
+
+.social:nth-child(2){
+    transition: all 1.5s;
+    transition-delay: 200ms;
+}
+.social:nth-child(3){
+    transition: all 1.5s;
+    transition-delay: 400ms;
+}
+.social:nth-child(4){
+    transition: all 1.5s;
+    transition-delay: 600ms;
+}
+.social:nth-child(5){
+    transition: all 1.5s;
+    transition-delay: 800ms;
+}
+.social:nth-child(6){
+    transition: all 1.5s;
+    transition-delay: 1000ms;
+}

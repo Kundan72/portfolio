@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <!-- EmailJs -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("q7gFQbdp_Ev-606m5");
+        })();
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <h1>Kundan's Portfolio</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social">Socials</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection hidden LLtoR">
+                <div>Hi! My name is <span class="purple">Kundan</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        <a style="text-decoration: none; color: rgb(0, 0, 33);" href="assets/My_CV.pdf"
+                            target="_blank">Download Resume</a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img class="hidden RRtoL" src="asset/Xprofilepic.jpg" alt="Profile Picture" />
+            </div>
+        </section>
+
+
+
+        <section class="secsection hidden" id="about">
+            <h1 class="hidden LtoR">Tech Experience</h1>
+            <h4 class="hidden RtoL">⁤Showcasing my technical skills and expertise with diverse tools and technologies to
+                provide modern solutions.</h4>
+            <div class="tech hidden LtoR">
+                <img src="asset/html-5.png" alt="Html">
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/css-3.png" alt="Css">
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/js.png" alt="Js">
+            </div>
+            <!-- <div class="tech hidden LtoR">
+                <img src="asset/react.png" alt="React"> -->
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/node-js.png" alt="Node">
+            </div>
+            <!-- <div class="tech hidden LtoR">
+                <img src="asset/mongodb.png" alt="Mongodb">
+            </div> -->
+            <div class="tech hidden LtoR">
+                <img src="asset/sql.png" alt="Sql">
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/git.png" alt="Git">
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/c.png" alt="C">
+            </div>
+            <div class="tech hidden LtoR">
+                <img src="asset/python.png" alt="Python">
+            </div>
+            <!-- <div class="tech hidden LtoR">
+                <img src="asset/java.png" alt="Java">
+            </div> -->
+        </section>
+
+
+
+        <section class="thirdsection" id="contact">
+            <h1 class="hidden LtoR">Contact</h1>
+            <h4 class="hidden RtoL">⁤Let's connect to discuss your project needs - drop me a message and I'll get back
+                to you promptly.</h4>
+            <!--<div class="form-container hidden LLtoR">
+                <form class="form" id="contact-form">
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input required name="email" id="email" type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">How Can I Help You?</label>
+                        <textarea required id="textarea" name="textarea" placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Submit</button>
+                </form> -->
+                <div class="form-container hidden LLtoR">
+                    <form class="form" id="contact-form" action="https://formspree.io/f/mjkbwzpn"method="POST">
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input required name="email" id="email" type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">How Can I Help You?</label>
+                            <textarea required id="textarea" name="message" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn">Submit</button>
+                    </form>
+            </div>
+        </section>
+
+
+
+        <section class="fourthsection" id="social">
+            <h1 class="hidden LtoR">Socials</h1>
+            <h4 class="hidden RtoL">⁤Connect with me on social media to stay updated with my latest news, insights, and
+                activities across platforms.</h4>
+            <div class="social hidden LtoR linkedin">
+                <a href="https://www.linkedin.com/in/kundankumardas" target="_blank" aria-label="LinkedIn"></a>
+            </div>
+            <div class="social hidden LtoR github">
+                <a href="https://github.com/kundan72" target="_blank" aria-label="GitHub"></a>
+            </div>
+            <div class="social hidden LtoR instagram">
+                <a href="https://www.instagram.com/kundan380_" target="_blank" aria-label="Instagram"></a>
+            </div>
+            <div class="social hidden LtoR twitter">
+                <a href="https://twitter.com/kundan_71" target="_blank" aria-label="Twitter"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright © portfolioofkundan || All rights reserved
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Web Developer",
+                "Content Writer",
+                "UI/UX Developer"
+            ],
+            typeSpeed: 90
+        });
+    </script>
+</body>
+
+</html>
